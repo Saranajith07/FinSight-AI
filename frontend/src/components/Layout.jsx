@@ -26,7 +26,7 @@ import axios from "axios";
 import { Outlet } from "react-router-dom";
 import SettingsModal from "./SettingsModal";
 
-const API_BASE = "http://localhost:4000/api";
+const API_BASE = "https://finsight-ai-uu55.onrender.com/api";
 const CATEGORY_ICONS = {
   Food: <Utensils className="w-4 h-4" />,
   Housing: <Home className="w-4 h-4" />,

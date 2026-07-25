@@ -5,7 +5,7 @@ import { ChevronDown, LogOut, User, Settings, Bell, Trash2, Inbox, X } from "luc
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:4000/api";
+const BASE_URL = "https://finsight-ai-uu55.onrender.com/api";
 
 const Navbar = ({ user: propUser, onLogout, onUpdateUser, onOpenSettings }) => {
   const navigate = useNavigate();

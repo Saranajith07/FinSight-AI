@@ -4,7 +4,7 @@ import { X, Settings, DollarSign, Smartphone } from 'lucide-react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-const API_BASE = "http://localhost:4000/api";
+const API_BASE = "https://finsight-ai-uu55.onrender.com/api";
 
 const SettingsModal = ({ isOpen, onClose, user, onUpdate }) => {
     const [budgetLimit, setBudgetLimit] = useState(user?.budgetLimit || 0);

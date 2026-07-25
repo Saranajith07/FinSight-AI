@@ -16,7 +16,7 @@ import axios from "axios";
 import { budgetStyles as s, cn } from "../assets/dummyStyles";
 import { toast } from "react-toastify";
 
-const API_URL = "http://localhost:4000";
+const API_URL = "https://finsight-ai-uu55.onrender.com/api";
 
 const Budgets = ({ user, onUpdateUser, transactions }) => {
   const [isEditing, setIsEditing] = useState(false);
