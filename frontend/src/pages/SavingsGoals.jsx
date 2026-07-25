@@ -17,7 +17,7 @@ import axios from "axios";
 import { goalStyles as s, cn } from "../assets/dummyStyles";
 import { toast } from "react-toastify";
 
-const API_URL = "https://finsight-ai-uu55.onrender.com/api";
+const API_URL = "https://finsight-ai-uu55.onrender.com";
 
 const SavingsGoals = ({ user }) => {
   const [goals, setGoals] = useState([]);
