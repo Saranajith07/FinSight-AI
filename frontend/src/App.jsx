@@ -19,7 +19,7 @@ import SavingsGoals from "./pages/SavingsGoals";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const API_URL = "http://localhost:4000";
+const API_URL = "https://finsight-ai-uu55.onrender.com";
 
 // to get transaction from localstorage
 const getTransactionsFromStorage = () => {
@@ -209,8 +209,14 @@ const App = () => {
       <ScrollToTop />
 
       <Routes>
-        <Route path="/login" element={<Login onLogin={handleLogin} />} />
-        <Route path="/signup" element={<Signup onSignup={handleSignup} />} />
+        <Route
+  path="/login"
+  element={<Login onLogin={handleLogin} API_URL={API_URL} />}
+/>
+        <Route
+  path="/signup"
+  element={<Signup onSignup={handleSignup} API_URL={API_URL} />}
+/>
 
         <Route
           element={

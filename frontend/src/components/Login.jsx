@@ -5,7 +5,7 @@ import signupBg from "../assets/signup-bg.png";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const Login = ({ onLogin, API_URL = "http://localhost:4000" }) => {
+const Login = ({ onLogin, API_URL = "https://finsight-ai-uu55.onrender.com" }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
